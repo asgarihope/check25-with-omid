@@ -1,6 +1,6 @@
 # Check25-With-Omid Code Challenge Project 🚀
 
-This project is part of a code challenge for Check24. It involves implementing an insurance service with two providers, ACME and OMID. The project demonstrates the use of the Strategy Design Pattern, Repository Pattern, and basic CRUD operations. Oh, and don’t forget the popcorn! 🍿
+This project is part of a code challenge for Check24. It involves implementing an insurance service with two providers, ACME and OMID. The project demonstrates the use of the Strategy Design Pattern.
 
 ---
 
