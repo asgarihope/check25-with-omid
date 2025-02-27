@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Http\Requests\InsuranceRequestCommandRequest;
+use App\Services\Insurance\InsuranceService;
 use app\Services\Insurance\InsuranceServiceInterface;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Validator;
@@ -24,10 +25,10 @@ class InsuranceRequestCommand extends Command
     protected $description = 'Process an insurance request from a JSON file.';
     private InsuranceServiceInterface $insuranceService;
 
-    public function __construct(InsuranceServiceInterface $insuranceService)
+    public function __construct()
     {
         parent::__construct();
-        $this->insuranceService = $insuranceService;
+        $this->insuranceService = app(InsuranceService::class);
     }
 
 
